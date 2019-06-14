@@ -4,9 +4,9 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.graphics.Bitmap;
 import android.graphics.Point;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.View;
@@ -18,23 +18,28 @@ import com.bumptech.glide.request.target.ImageViewTarget;
 
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.BindViews;
 
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 
 public class LoginActivity extends AppCompatActivity {
 
   @BindViews(value = {R.id.logo, R.id.first, R.id.second, R.id.last})
   protected List<ImageView> sharedElements;
+  @BindView(R.id.pager)
+  AnimatedViewPager pager;
+
+  @BindView(R.id.scrolling_background)
+  ImageView background;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
     ButterKnife.bind(this);
-    final AnimatedViewPager pager = ButterKnife.findById(this, R.id.pager);
-    final ImageView background = ButterKnife.findById(this, R.id.scrolling_background);
+
     int[] screenSize = screenSize();
 
     for (ImageView element : sharedElements) {

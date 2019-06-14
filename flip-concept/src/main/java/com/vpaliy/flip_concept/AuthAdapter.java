@@ -1,9 +1,7 @@
 package com.vpaliy.flip_concept;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.View;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class AuthAdapter extends FragmentStatePagerAdapter
         implements AuthFragment.Callback {

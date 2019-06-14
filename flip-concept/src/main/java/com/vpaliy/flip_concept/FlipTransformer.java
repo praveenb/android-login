@@ -1,8 +1,8 @@
 package com.vpaliy.flip_concept;
 
 
-import android.support.v4.view.ViewPager;
-import android.util.FloatProperty;
+import androidx.viewpager.widget.ViewPager;
+
 import android.util.Log;
 import android.view.View;
 

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LoginConcept.iml" filepath="$PROJECT_DIR$/LoginConcept.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/android-login.iml" filepath="$PROJECT_DIR$/.idea/android-login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/flip-concept/flip-concept.iml" filepath="$PROJECT_DIR$/flip-concept/flip-concept.iml" />
-      <module fileurl="file://$PROJECT_DIR$/flip-concept/flip-concept.iml" filepath="$PROJECT_DIR$/flip-concept/flip-concept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pb-android-login.iml" filepath="$PROJECT_DIR$/pb-android-login.iml" />
     </modules>
   </component>
 </project>

@@ -1,17 +1,19 @@
 package com.vpaliy.flip_concept;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-
+  @BindView(R.id.pager)
+  AnimatedViewPager pager;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login);
-    AnimatedViewPager pager = ButterKnife.findById(this, R.id.pager);
+    ButterKnife.bind(this);
     pager.setAdapter(new AuthAdapter(getSupportFragmentManager(), pager));
   }
 }
